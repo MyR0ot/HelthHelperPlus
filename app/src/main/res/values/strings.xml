@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelthHelperPlus</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_pass">Password</string>
+    <string name="main_title">HelthHelper</string>
+    <string name="sign_up">sign up</string>
+    <string name="register">register</string>
+</resources>
