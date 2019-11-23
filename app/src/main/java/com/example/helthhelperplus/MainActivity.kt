@@ -1,6 +1,7 @@
 package com.example.helthhelperplus
 
 import android.content.Intent
+import android.nfc.NfcAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        getSupportActionBar()!!.hide();
         setContentView(R.layout.activity_main)
 
         b_sign.setOnClickListener {
@@ -45,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                         startActivity(it)
                     }
                 }
-                if(isUser(login)){
+                else {
                     Intent(this@MainActivity, UserActivity::class.java).also {
                         it.putExtra("login", login)
                         startActivity(it)
@@ -58,6 +60,8 @@ class MainActivity : AppCompatActivity() {
             this.register()
         }
     }
+
+
 
     private fun load(): Unit {
 

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helthhelperplus">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".UserActivity"></activity>
+        <activity android:name=".RecyclerActivity"></activity>
+        <activity android:name=".UserActivity" />
         <activity android:name=".DoctorActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
