@@ -12,10 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".RecyclerActivity"></activity>
-        <activity android:name=".UserActivity" />
-        <activity android:name=".DoctorActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".RecyclerActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".UserActivity" android:screenOrientation="portrait" />
+        <activity android:name=".DoctorActivity" android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
